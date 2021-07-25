@@ -1,0 +1,4583 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+
+}
+
+@font-face{
+    font-family:"28 Days Later";
+    src:url("../fonte/28 Days Later.ttf");
+}
+html, body{
+    height: 100vh;
+
+}
+body{
+    background: url(../img/backgraund-photo.png)no-repeat center center;
+    background-size: cover;
+
+}
+/*    header   */
+header{
+}
+header a {
+    text-decoration: none;
+}
+#nav{
+    font-size: .9em ;
+    z-index: 999;
+}
+#nome{
+    text-overflow: ellipsis;
+    color: white;
+}
+/* LOGO */
+#logo{
+    font-family:"28 Days Later";
+    color: white;
+    font-size: 2.5em;
+    padding: 0px 15px;
+}
+/* Meus Dados  */
+.meus-dados input{
+    cursor: no-drop;
+}
+#meus-dados input{
+    cursor: no-drop;
+
+}
+#lbl{
+    background-color: rgb(211,211,211);
+
+}
+#lbl input{
+    cursor: no-drop;
+}
+#lbl select{
+    cursor: no-drop;
+}
+/* MAIN */
+
+main{ 
+
+    background: url(../img/backgraund-photo.png)no-repeat center center;
+    background-size: cover;   
+    min-height: 110vh;
+}
+main h2{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0px;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255,255,255,.8);
+}
+/* HERO   */
+.hero{  display: flex;flex-direction: column;align-items: center;justify-content: center;min-width: 100%; min-height: 80vh;
+        background-color: rgba(255,255,255,0.8);}
+.hero h2,p{text-align: center;color:black;margin-bottom: 30px;}
+.hero h2{font-size: 2.5em;}
+.hero p{font-size: 1.5em;}
+.hero .btn{ padding: 20px;margin-top: 15px;border-radius: 10px;background-color: rgba(0, 0, 0, 0.6);color: #050000;
+            color:white;text-transform: uppercase;font-weight: bold;cursor: pointer;}
+.hero .btn:hover{   background-color: rgb(255, 255, 255);border: solid 1px;}
+.endereco-barbe{
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 80vh;
+    padding: 50px;
+}
+.endereco-barbe h3{
+    color: white;
+    padding: 35px;
+    padding-top: 0px;
+}
+.div-endereco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.mapa{
+    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+#map-pequeno{
+    display: none;
+}
+.endereco{
+    width: 50%;
+    width: 100%;
+}
+.endereco ul{
+    color: white;
+
+}
+/*  AMOSTRA */
+.amostra{display: flex;flex-direction:column;align-items: center;padding: 100px 50px;width: 100%;justify-content: center;align-items: center; background-color: rgba(255,255,255,.8)}
+.amostra h2{font-weight: bolder;padding: 50px; padding-top:10px;}     
+.lista-prod{display: flex;flex-direction: row;justify-content: center;align-items: center; padding: 0px;flex-wrap: wrap;
+}
+.prod{text-align: center; padding: 0 25px;margin-bottom:50px;}
+.prod:first-child{padding-left: 0px;}
+figure img{width: 220px; height: 220px;}
+figcaption h4{margin: 20px 0px; font-size: 1.2em;}
+figcaption p{ max-width: 200px;color: black;}
+#conteiner-main{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+/* ADMINISTRACAO */
+.administracao{
+    background-color: rgba(255,255,255,.8);
+    min-height: 100vh;
+}
+.bem-vindo{
+    background-color: rgba(255,255,255,.8);
+}
+.bem-vindo h1{
+    padding: 25px;
+}
+.bem-vindo p{
+    font-size: 1.5em;
+}
+/* CONTEUDO AGENDAMENTO */
+
+#conteiner-agendamento{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    border: solid 1px;
+
+}
+.nav-atendimento{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(255,255,255,.8);
+    align-items: center;
+
+}
+.nav-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.nav-flex li{
+    padding: 5px 10px;
+    list-style-type: none;
+}
+.nav-flex li a{
+    text-decoration: none;
+    color: black;
+    font-size:.9rem;
+    opacity: 0.5;
+    font-weight: bold;
+}
+.nav-flex li a:hover{
+    opacity: 1;
+}
+#btnNovo{
+    background-color: black;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: white;  
+    border: solid 1px black;
+}
+#btnNovo:hover{
+    transition: .8s;
+    background-color: white;
+    color: black;
+    border: solid 1px;
+}
+#form-busca span{
+    padding: 0px 10px;
+    padding-left: 0px;
+    font-weight: bold;
+}
+#form-busca input{
+    padding: 0px 10px;
+    padding-left: 0px;
+    outline: none;
+    border: none;
+    background-color: rgba(255,255,255,0.0);
+    border-bottom: solid 1px;
+}
+#form-busca button{
+    padding: 0px 15px;
+    padding-left: 0px;
+    outline: none;
+    border: none;
+    background-color: rgba(255,255,255,0.0); 
+}
+.conteudo-agendamento{
+    width: 100%;
+    height: 100%;
+
+}
+.tabela-branca{
+    margin-top: 0px;
+    background-color: rgba(255,255,255,.8);
+    min-height: 110vh;
+
+}
+.tabela-branca p{
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 200px;
+}
+#h2-branco{
+    background-color: rgba(255,255,255,.9)
+}
+.altara-100{
+    min-height: 100vh;
+}
+/* SERVIÇOS */
+.conteudo-servico{
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+
+}
+.servico{   
+    margin-top: 80px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,.9); 
+    border: solid 2px;
+
+}
+.servico h3{
+    text-align: center;
+}
+#servico{
+    padding: 10px;
+
+}
+.servico form button{
+    float: right;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-right:30px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+.cont-serv div{
+    margin: 0px 20px;
+    padding: 25px;
+
+}
+.cont-serv{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+/* Funcionario */
+.cont-fun{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.h3{
+    padding: 20px;
+}
+.funcionario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:5px 20px;
+    background-color: rgba(255,255,255,0.0); 
+    padding: 20px;
+    max-width: 460px;
+}
+.funcionario #branco{
+    margin: 10px;
+}
+.data-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.conteudo-servico form button{
+    float: right;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right:0px;
+    color: white;
+    margin-top: -10px;
+    background-color: black;
+    border-radius: 10px;
+}
+.conteudo-servico form span{
+    font-weight: bold;
+    padding: 5px 15px;
+    padding-left:2px;
+}
+/*HORARIO*/
+.horario{
+    padding: 20px;
+    width: 420px;
+}
+.horario h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#proximo{
+    margin-top: -10px;
+}
+#proximo-fun{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+#proximo-ser{
+    margin-right: 10px;
+}
+.cont-hora{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.erro{
+    padding: 100px;
+}
+.redirect button{
+    float: right;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right:15px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+/*RESUMO*/
+.cont-resumo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+}
+.resumo{
+    max-width: 500px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 30px;
+
+}
+.resumo table input{
+    margin-bottom: 10px;
+}
+.resumo table span{
+    font-weight: bold;
+}
+.resumo button{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: solid 1px;
+    padding: 8px;
+    margin: 7px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+.resumo button:hover{
+    background-color: white;
+    color: black;
+    border: solid 1px;
+    transition: .8s;
+}
+/* LOGIN */
+
+.mensagem{
+    margin-top: 10px;
+}
+.conteiner-login{
+    background: white;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    border: solid 4px;
+    margin: 10%;
+    border-radius: 20px;
+    width: 30%;
+    max-width: 450px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.9);
+}
+.conteiner-login figure img{
+    width: 150px;
+    height: 150px;
+}
+.mensagem{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.conteiner-login figure{
+    align-items: center;
+    padding: 15px 10px;
+    margin-top: 10px; 
+}
+#head-login{
+    object-fit: fill;
+}
+.head-login{
+    object-fit: fill;
+
+}
+#msg{
+    border-radius: 20px;
+    font-size:1em;
+}
+#msg button{
+    font-size:1em;
+}
+
+#msg #btn-fecha{
+
+    margin-top: -18px;
+    margin-left: 40px;
+}
+#msg #btn-fun{
+
+    margin-top: 2px;
+    margin-left: 40px;
+}
+.body-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+.body-login form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner-login p{
+    font-size: 1.2em;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    padding: 20px;
+}
+.form-table{
+    align-items: center;
+}
+.tabela{
+    font-size: 1.5em;
+}
+.tabela span{
+    font-family:"28 Days Later";
+    font-weight: bold;
+}
+.body-login h3{
+    margin-top: 0px;
+    text-align: center;
+    padding: 0px;
+    font-size: 1.8em;
+    font-family:"28 Days Later";
+    font-weight: bold;
+}
+.body-login #titulo-login{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.body-login input{
+    padding: 10px;
+    margin:5px;
+    outline: none;
+    border: none;
+    width: 180px;
+    background-color: rgba(255,255,255,0.2);
+}
+.body-login .linha{
+    margin-top: -6px;
+    margin-left: 5px;
+    border: solid 1px black;
+    height: 1px;
+    width: 170px;
+}
+.body-login #btn{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px 10px 30px;
+    margin-top:30px;
+    outline: none;
+    color:white;
+    background: #696969;
+    font-family:"28 Days Later";   
+}
+.entra{
+    margin-bottom: 30px;
+}
+.body-login #btn:hover{
+    background: #d3d3d3;
+    color:black; 
+}
+#login_cliente{
+    text-align: center;
+}
+.body-login p {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+/*Centralizar*/
+#tb-pequena{
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: .8em;
+}
+#tb-grande{
+    text-align: center;
+    vertical-align: middle;
+}
+#tb-media{
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+}
+/* CADASTRAR CLIENTE */
+#altura{
+    height: 122vh;
+}
+.cont-cadastrar{
+    width: 100%;
+    display: flex;
+    background-color: rgba(255,255,255,.8);
+    align-items: center;
+    justify-content: center;
+}
+.cadastro{
+    margin-top: -100px;
+    border: solid 4px black;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 5px 5px 5px 3px ;
+}
+.cadastro h2{
+    margin-top: -40px;
+    margin-bottom: 40px;
+    background-color: transparent;
+    color: white;
+}
+#table-cadastro input{
+    background-color: transparent;
+    outline: none;
+    border:none;    
+}
+#table-cadastro{
+    text-align: left;
+}
+#table-cadastro span{
+    color: white;
+    font-weight: bold;
+}
+#table-cadastro form{
+    margin: 25px;
+
+}
+#table-cadastro a span:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.cadastro{
+    text-align: center;
+}
+#termos{
+    cursor: pointer;
+}
+.cadastro form #cadastrar{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border: solid 1px white;
+    font-weight: bold;
+
+}
+.cadastro form #cadastrar:hover{
+    color: white;
+    border: solid 1px white;
+    background-color: black;
+    transition: .8s;
+}
+.cadastro form label{
+    margin:5px;
+    padding: 5px 10px;;
+    margin-right: 0px;
+    border-radius: 10px;
+    outline: none;
+    border:solid 1px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+#modal-p p{
+    text-align: justify;
+}
+/* CADASTRAR FUNCIONARIO */
+.cont-cadastra-fun{
+    height:155vh;
+}
+#cadastro-fun{
+    padding: 30px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+#cadastro-fun h2{
+    margin-top: 10px;;
+    padding: 0px;
+}
+.cadastrar-fun input{
+    width: 180px;
+}
+.cadastrar-fun select{
+    width: 180px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+/* VINCULAR */    
+#vincular select{
+
+    outline: none;
+    border: none;
+
+}
+#vincular label{
+    margin:5px;
+    padding: 5px 10px;;
+    margin-right: 0px;
+    border-radius: 10px;
+    outline: none;
+    border:solid 1px;
+    background-color: white;
+    margin-left: 10px;
+}
+#vincular span{
+    font-weight: bold;
+}
+#vincular button{
+    border: solid 1px black;
+    background-color: black;
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#vincular button:hover{
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+/* FOOTER  */
+footer{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+/* CONT-FOOTER*/
+.cont-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color:white;
+    font-size: .8rem;
+}
+.cont-footer a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.cont-footer a:hover{
+    color: white;
+    opacity: 1;
+}
+/* FOOTER-LEFT */
+.footer-left{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* FOOTER-MID */
+.footer-mid{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* FOOTER-RIGHT */
+.footer-right{
+    width: 33%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media only screen and (min-width : 200px) and (max-width: 520px){
+    /* HERO   */
+    .hero{  display: flex;flex-direction: column;align-items: center;justify-content: center;min-width: 100%; min-height: 80vh;
+            background-color: rgba(255,255,255,0.8);}
+    .hero h2,p{text-align: center;color:black;margin-bottom: 20px;}
+    .hero h2{font-size: 1.2em;}
+    .hero p{font-size: 1em;}
+    .hero .btn{ padding: 15px;margin-top: 15px;border-radius: 10px;background-color: rgba(0, 0, 0, 0.6);color: #050000;
+                color:white;text-transform: uppercase;font-weight: bold;cursor: pointer;}
+    .hero .btn:hover{   background-color: rgb(255, 255, 255);border: solid 1px;}
+    /* ENDERECO */
+    .endereco-barbe{
+        background-color: rgba(0,0,0,.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 80vh;
+        padding: 50px;
+    }
+    .endereco-barbe h3{
+        color: white;
+        padding: 0px;
+        margin-bottom: 40px;
+        padding-top: 0px;
+        font-size: 1.1em;
+    }
+    .div-endereco{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mapa{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #map-grande{
+        display: none;
+
+    }
+    #map-pequeno{
+        display: block;
+        width: 280px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
+    .endereco{
+        width: 100%;
+    }
+    .endereco ul{
+        color: white;
+        font-size: .7em;
+
+    }
+    /*  AMOSTRA */
+    .amostra{display: flex;flex-direction:column;align-items: center;padding: 80px 25px;width: 100%;justify-content: center;align-items: center; background-color: rgba(255,255,255,.8)}
+    .amostra h2{font-weight: bolder;padding: 25px; padding-top:10px;}     
+    .lista-prod{display: flex;flex-direction: row;justify-content: center;align-items: center; padding: 0px;flex-wrap: wrap;
+    }
+    .prod{text-align: center; padding: 0 25px;margin-bottom:50px;}
+    .prod:first-child{padding-left: 0px;}
+    figure img{width: 220px; height: 220px;}
+    figcaption h4{margin: 20px 0px; font-size: 1.1em;}
+    #conteiner-main{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ADMINISTRACAO */
+    .administracao{
+        background-color: rgba(255,255,255,.8);
+        min-height: 100vh;
+    }
+    .bem-vindo{
+        background-color: rgba(255,255,255,.8);
+    }
+    .bem-vindo h1{
+        padding: 0px;
+        font-size: 1.3em;
+    }
+    .bem-vindo p{
+        font-size: 1em;
+    }
+    /* CONTEUDO AGENDAMENTO */
+
+    #conteiner-agendamento{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        border: solid 1px;
+
+    }
+    .nav-atendimento{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: rgba(255,255,255,.8);
+        align-items: flex-start;
+
+    }
+    #botao{
+        font-size: .8em;
+        width: 165px;
+        margin-bottom: 10px;
+    }
+    .nav-flex{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .nav-flex li{
+        padding: 5px 10px;
+        list-style-type: none;
+    }
+    .nav-flex li a{
+        text-decoration: none;
+        color: black;
+        font-size:.9rem;
+        opacity: 0.5;
+        font-weight: bold;
+    }
+    .nav-flex li a:hover{
+        opacity: 1;
+    }
+    #btnNovo{
+        background-color: black;
+        text-align: center;
+        border-radius: 8px;
+        font-size: .8em;
+        width: 165px;
+        text-decoration: none;
+        padding: 8px 10px;
+        color: white;  
+        border: solid 1px black;
+        margin-bottom: 10px;
+    }
+    #btnNovo:hover{
+        transition: .8s;
+        background-color: white;
+        color: black;
+        border: solid 1px;
+    }
+    #form-busca span{
+        padding: 0px 10px;
+        padding-left: 0px;
+        font-weight: bold;
+        font-size: .8em;
+    }
+    #form-busca input{
+        padding: 0px 10px;
+        padding-left: 0px;
+        outline: none;
+        width: 130px;
+        border: none;
+        background-color: rgba(255,255,255,0.0);
+        border-bottom: solid 1px;
+    }
+    #form-busca button{
+        padding: 0px 15px;
+        padding-left: 0px;
+        outline: none;
+        border: none;
+        background-color: rgba(255,255,255,0.0); 
+    }
+    .conteudo-agendamento{
+        width: 100%;
+        height: 100%;
+
+    }
+    .tabela-branca{
+        margin-top: 0px;
+        background-color: rgba(255,255,255,.8);
+        min-height: 110vh;
+
+    }
+    .tabela-branca p{
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 200px;
+    }
+    #h2-branco{
+        background-color: rgba(255,255,255,.9)
+    }
+    .altara-100{
+        min-height: 100vh;
+    }
+    /* SERVIÇOS */
+    .conteudo-servico{
+
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .servico{   
+        margin-top: 80px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,255,.9); 
+        border: solid 2px;
+        margin-bottom: 30px;
+
+    }
+    .servico h3{
+        text-align: center;
+    }
+    #servico{
+        padding: 0px;
+
+    }
+    .servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 15px;
+        margin-bottom: 10px;
+        margin-right:30px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .cont-serv div{
+        margin: 0px 20px;
+        padding: 10px;
+
+    }
+    .cont-serv{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+
+    }
+    .cont-serv label{
+        font-size: .8em;
+    }
+    /* Funcionario */
+    .cont-fun{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .h3{
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    #branco{
+        font-size: .8em;          
+    }
+    .funcionario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:5px 20px;
+        background-color: rgba(255,255,255,0.0); 
+        padding: 20px;
+        max-width: 460px;
+    }
+    .funcionario #branco{
+        margin: 10px;
+    }
+    .data-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    .data-button span{
+        font-size: .8em;
+        padding: 5px 5px;
+    }
+    .data-button input{
+        font-size: .8em;
+        width: 100px;
+    }
+    .conteudo-servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 5px;
+        margin-bottom: 20px;
+        margin-right:0px;
+        color: white;
+        margin-top: -10px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .conteudo-servico form span{
+        font-weight: bold;
+        padding: 5px 0px;
+        padding-left:2px;
+    }
+    /*HORARIO*/
+    .horario{
+        padding: 0px;
+        width: 318px;
+    }
+    .horario h4{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .horario span{
+        font-size: .8em;
+        padding: 0px;
+    }
+    .cont-hora span{
+        font-size: 1em;
+        padding: 0px 5px;
+    }
+    #proximo{
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+    #proximo-fun{
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    #proximo-ser{
+        margin-right: 10px;
+    }
+    .cont-hora{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .erro{
+        padding: 38px;
+    }
+    #erro h4{
+        font-size: .8em;
+    }
+    .redirect button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-right:15px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    /*RESUMO*/
+    .cont-resumo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+
+    }
+    .resumo{
+        max-width: 500px;
+        background-color: rgba(255,255,255,0.9);
+        padding: 5px;
+        border: solid 3px;
+    }
+    .resumo table input{
+        margin-bottom: 10px;
+        width: 130px;
+    }
+    .resumo table span{
+        font-weight: bold;
+        font-size: .8em;
+    }
+    .resumo button{
+        background-color: black;
+        color: white;
+        outline: none;
+        border: solid 1px;
+        padding: 5px;
+        margin: 5px;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: .8em;
+
+    }
+    .resumo button:hover{
+        background-color: white;
+        color: black;
+        border: solid 1px;
+        transition: .8s;
+    }
+    /* LOGIN */
+
+    .mensagem{
+        margin-top: 10px;
+    }
+    .conteiner-login{
+        background: white;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        border: solid 4px;
+        margin: 10%;
+        border-radius: 20px;
+        width: 90%;
+        max-width: 450px;
+        box-sizing: border-box;
+        background-color: rgba(255,255,255,0.9);
+    }
+    .conteiner-login figure img{
+        width: 75px;
+        height: 75px;
+    }
+    .mensagem{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .conteiner-login figure{
+        align-items: center;
+        padding: 15px 10px;
+        margin-top: 10px; 
+    }
+    #head-login{
+        object-fit: fill;
+    }
+    .head-login{
+        object-fit: fill;
+
+    }
+    #msg{
+        border-radius: 20px;
+        font-size:.8em;
+    }
+    #msg #btn-fecha{
+        font-size: .8em;
+        margin-top: -15px;
+        margin-left: 40px;
+    }
+    #msg #btn-fun{
+        font-size: .8em;
+        margin-top: 2px;
+        margin-left: 40px;
+    }
+    .body-login{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .body-login form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner-login p{
+        font-size: .8em;
+        flex-wrap: nowrap;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .form-table{
+        align-items: center;
+    }
+    .tabela{
+        font-size: 1em;
+    }
+    .tabela span{
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login h3{
+        margin-top: 0px;
+        text-align: center;
+        padding: 0px;
+        font-size: 1.8em;
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login #titulo-login{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .body-login input{
+        padding: 10px;
+        margin:5px;
+        outline: none;
+        border: none;
+        width: 180px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .body-login .linha{
+        margin-top: -6px;
+        margin-left: 5px;
+        border: solid 1px black;
+        height: 1px;
+        width: 170px;
+    }
+    .body-login #btn{
+        border: none;
+        border-radius: 10px;
+        padding: 10px 25px 10px 30px;
+        margin-top:30px;
+        outline: none;
+        color:white;
+        background: #696969;
+        font-family:"28 Days Later";   
+    }
+    .entra{
+        margin-bottom: 30px;
+    }
+    .body-login #btn:hover{
+        background: #d3d3d3;
+        color:black; 
+    }
+    #login_cliente{
+        text-align: center;
+    }
+    .body-login p {
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    /*Centralizar*/
+    #tb-pequena{
+        display: block;
+        text-align: center;
+        vertical-align: middle;
+        font-size: .8em;
+
+    }
+    #tb-pequena td{
+         padding: 5px 0px;
+         width: 25%;
+    }
+    @media only screen and (min-width : 356px) and (max-width: 420px){
+        #tb-pequena{
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1em;
+
+        }
+    }
+    @media only screen and (min-width : 421px) and (max-width: 485px){
+        #tb-pequena{
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.2em;
+
+        }
+    }
+    @media only screen and (min-width : 486px) and (max-width: 520px){
+        #tb-pequena{
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.3em;
+
+        }
+    }
+
+    #tb-grande{
+        display: none;
+    }
+    #tb-media{
+        display: none;
+    }
+    #botao-con{
+        font-size: .8em;
+        padding: 5px;
+        margin-bottom: 4px;
+        
+    }
+    #botao-c{
+        font-size: .8em;
+        padding: 5px;
+    }
+    /* CADASTRAR CLIENTE */
+    #altura{
+        height: 122vh;
+    }
+    .cont-cadastrar{
+        width: 100%;
+        display: flex;
+        background-color: rgba(255,255,255,.8);
+        align-items: center;
+        justify-content: center;
+    }
+    .cadastro{
+        margin-top: -100px;
+        border: solid 4px black;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,.7);
+        box-shadow: 5px 5px 5px 3px ;
+    }
+    .cadastro h2{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        color: white;
+    }
+    #termos{
+        width: 20px;
+        margin-left: 10px;
+    }
+    #table-cadastro label input{
+        
+        outline: none;
+        border:none; 
+         font-size: .8em;
+         width: 145px;
+         
+    }
+    #table-cadastro{
+        text-align: left;
+    }
+    #table-cadastro span{
+        color: white;
+        font-weight: bold;
+        font-size: .8em;
+    }
+    #table-cadastro form{
+        margin: 25px;
+
+    }
+    
+    #table-cadastro a span:hover{
+        text-decoration:underline;
+        cursor: pointer;
+    }
+    .cadastro{
+        text-align: center;
+    }
+    #termos{
+        cursor: pointer;
+    }
+    .cadastro form #cadastrar{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        border: solid 1px white;
+        font-weight: bold;
+
+    }
+    .cadastro form #cadastrar:hover{
+        color: white;
+        border: solid 1px white;
+        background-color: black;
+        transition: .8s;
+    }
+    .cadastro form label{
+        margin:5px;
+        padding: 5px 5px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+        width: 145px;
+    }
+
+    #modal-p p{
+        text-align: justify;
+    }
+    /* CADASTRAR FUNCIONARIO */
+    .cont-cadastra-fun{
+        height:155vh;
+    }
+    #cadastro-fun{
+        padding: 30px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    #cadastro-fun h2{
+        margin-top: 10px;;
+        padding: 0px;
+    }
+    .cadastrar-fun input{
+        width: 145px;
+    }
+    .cadastrar-fun select{
+        width: 140px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    /* VINCULAR */    
+    #vincular select{
+
+        outline: none;
+        border: none;
+        width: 110px;
+
+    }
+    #vincular label{
+        margin:5px;
+        padding: 5px 5px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+    #vincular span{
+        font-weight: bold;
+        font-size: .8em;
+    }
+    #vincular button{
+    border: solid 1px black;
+    background-color: black;
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#vincular button:hover{
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+    /* FOOTER  */
+    footer{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: black;
+    }
+    /* CONT-FOOTER*/
+    .cont-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color:white;
+        font-size: .4rem;
+        text-align: center;
+    }
+    .cont-footer a{
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+    }
+    .cont-footer h6{
+        font-size: .6rem;
+    }
+    .cont-footer a:hover{
+        color: white;
+        opacity: 1;
+    }
+    /* FOOTER-LEFT */
+    .footer-left{
+        width: 32%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+    /* FOOTER-MID */
+    .footer-mid{
+        width: 32%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /* FOOTER-RIGHT */
+    .footer-right{
+        width: 32%;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+@media only screen and (min-width : 521px) and (max-width: 720px){
+    /* HERO   */
+    .hero{  display: flex;flex-direction: column;align-items: center;justify-content: center;min-width: 100%; min-height: 80vh;
+            background-color: rgba(255,255,255,0.8);}
+    .hero h2,p{text-align: center;color:black;margin-bottom: 25px;}
+    .hero h2{font-size: 1.4em;}
+    .hero p{font-size: 1.2em;}
+    .hero .btn{ padding: 25px;margin-top: 15px;border-radius: 10px;background-color: rgba(0, 0, 0, 0.6);color: #050000;
+                color:white;text-transform: uppercase;font-weight: bold;cursor: pointer;}
+    .hero .btn:hover{   background-color: rgb(255, 255, 255);border: solid 1px;}
+    /* ENDERECO */
+    .endereco-barbe{
+        background-color: rgba(0,0,0,.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 80vh;
+        padding: 50px;
+    }
+    .endereco-barbe h3{
+        color: white;
+        padding: 0px;
+        margin-bottom: 40px;
+        padding-top: 0px;
+        font-size: 1.3em;
+    }
+    .div-endereco{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mapa{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #map-grande{
+        display: none;
+
+    }
+    #map-pequeno{
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .endereco{
+        width: 100%;
+    }
+    .endereco ul{
+        color: white;
+        font-size: 1em;
+
+    }
+    /*  AMOSTRA */
+    .amostra{display: flex;flex-direction:column;align-items: center;padding: 80px 25px;width: 100%;justify-content: center;align-items: center; background-color: rgba(255,255,255,.8)}
+    .amostra h2{font-weight: bolder;padding: 25px; padding-top:10px;}     
+    .lista-prod{display: flex;flex-direction: row;justify-content: center;align-items: center; padding: 0px;flex-wrap: wrap;
+    }
+    .prod{text-align: center; padding: 0 25px;margin-bottom:50px;}
+    figure img{width: 250px; height: 250px;}
+    figcaption h4{margin: 20px 0px; font-size: 1.4em;}
+    #conteiner-main{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ADMINISTRACAO */
+    .administracao{
+        background-color: rgba(255,255,255,.8);
+        min-height: 100vh;
+    }
+    .bem-vindo{
+        background-color: rgba(255,255,255,.8);
+    }
+    .bem-vindo h1{
+        padding: 25px;
+    }
+    .bem-vindo p{
+        font-size: 1.5em;
+    }
+    /* CONTEUDO AGENDAMENTO */
+
+    #conteiner-agendamento{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        border: solid 1px;
+
+    }
+    .nav-atendimento{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: rgba(255,255,255,.8);
+        align-items: flex-start;
+
+    }
+    #botao{
+        font-size: .8em;
+        width: 165px;
+        margin-bottom: 10px;
+    }
+    .nav-flex{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .nav-flex li{
+        padding: 5px 10px;
+        list-style-type: none;
+    }
+    .nav-flex li a{
+        text-decoration: none;
+        color: black;
+        font-size:.9rem;
+        opacity: 0.5;
+        font-weight: bold;
+    }
+    .nav-flex li a:hover{
+        opacity: 1;
+    }
+    #btnNovo{
+        background-color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: .8em;
+        width: 165px;
+        text-decoration: none;
+        padding: 8px 10px;
+        color: white;  
+        border: solid 1px black;
+        margin-bottom: 10px;
+    }
+    #btnNovo:hover{
+        transition: .8s;
+        background-color: white;
+        color: black;
+        border: solid 1px;
+    }
+    #form-busca span{
+        padding: 0px 10px;
+        padding-left: 0px;
+        font-weight: bold;
+        font-size: .8em;
+    }
+    #form-busca input{
+        padding: 0px 10px;
+        padding-left: 0px;
+        outline: none;
+        width: 150px;
+        border: none;
+        background-color: rgba(255,255,255,0.0);
+        border-bottom: solid 1px;
+    }
+    #form-busca button{
+        padding: 0px 15px;
+        padding-left: 0px;
+        outline: none;
+        border: none;
+        background-color: rgba(255,255,255,0.0); 
+    }
+    .conteudo-agendamento{
+        width: 100%;
+        height: 100%;
+
+    }
+    .tabela-branca{
+        margin-top: 0px;
+        background-color: rgba(255,255,255,.8);
+        min-height: 110vh;
+
+    }
+    .tabela-branca p{
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 200px;
+    }
+    #h2-branco{
+        background-color: rgba(255,255,255,.9)
+    }
+    .altara-100{
+        min-height: 100vh;
+    }
+    /* SERVIÇOS */
+    .conteudo-servico{
+
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .servico{   
+        margin-top: 80px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,255,.9); 
+        border: solid 2px;
+        margin-bottom: 30px;
+
+    }
+    .servico h3{
+        text-align: center;
+    }
+    #servico{
+        padding: 0px;
+
+    }
+    .servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 15px;
+        margin-bottom: 10px;
+        margin-right:30px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .cont-serv div{
+        margin: 0px 20px;
+        padding: 10px;
+
+    }
+    .cont-serv{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+
+    }
+    .cont-serv label{
+        font-size: .8em;
+    }
+    /* Funcionario */
+    .cont-fun{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .h3{
+        padding: 20px;
+    }
+    .funcionario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:5px 20px;
+        background-color: rgba(255,255,255,0.0); 
+        padding: 20px;
+        max-width: 460px;
+    }
+    .funcionario #branco{
+        margin: 10px;
+    }
+    .data-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .conteudo-servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right:0px;
+        color: white;
+        margin-top: -10px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .conteudo-servico form span{
+        font-weight: bold;
+        padding: 5px 15px;
+        padding-left:2px;
+    }
+    /*HORARIO*/
+    .horario{
+        padding: 20px;
+        width: 420px;
+    }
+    .horario h4{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #proximo{
+        margin-top: -10px;
+    }
+    #proximo-fun{
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    #proximo-ser{
+        margin-right: 10px;
+    }
+    .cont-hora{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .erro{
+        padding: 100px;
+    }
+    .redirect button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-right:15px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    /*RESUMO*/
+    .cont-resumo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+    }
+    .resumo{
+        max-width: 500px;
+        background-color: rgba(255,255,255,0.9);
+        padding: 30px;
+
+    }
+    .resumo table input{
+        margin-bottom: 10px;
+    }
+    .resumo table span{
+        font-weight: bold;
+    }
+    .resumo button{
+        background-color: black;
+        color: white;
+        outline: none;
+        border: solid 1px;
+        padding: 8px;
+        margin: 7px;
+        font-weight: bold;
+        border-radius: 10px;
+
+    }
+    .resumo button:hover{
+        background-color: white;
+        color: black;
+        border: solid 1px;
+        transition: .8s;
+    }
+    /* LOGIN */
+
+    .mensagem{
+        margin-top: 10px;
+    }
+    .conteiner-login{
+        background: white;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        border: solid 4px;
+        margin: 10%;
+        border-radius: 20px;
+        width: 55%;
+        max-width: 450px;
+        box-sizing: border-box;
+        background-color: rgba(255,255,255,0.9);
+    }
+    .conteiner-login figure img{
+        width: 80px;
+        height: 80px;
+    }
+    .mensagem{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .conteiner-login figure{
+        align-items: center;
+        padding: 15px 10px;
+        margin-top: 10px; 
+    }
+    #head-login{
+        object-fit: fill;
+    }
+    .head-login{
+        object-fit: fill;
+
+    }
+    msg{
+        border-radius: 20px;
+        font-size:.8em;
+        width: 60%;
+    }
+    #msg #btn-fecha{
+        font-size: .8em;
+        margin-top: -18px;
+        margin-left: 60px;
+    }
+    #msg #btn-fun{
+        font-size: .8em;
+        margin-top: 2px;
+        margin-left: 60px;
+    }
+    .body-login{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .body-login form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner-login p{
+        font-size: 1em;
+        flex-wrap: nowrap;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .form-table{
+        align-items: center;
+    }
+    .tabela{
+        font-size: 1.2em;
+    }
+    .tabela span{
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login h3{
+        margin-top: 0px;
+        text-align: center;
+        padding: 0px;
+        font-size: 1.8em;
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login #titulo-login{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .body-login input{
+        padding: 10px;
+        margin:5px;
+        outline: none;
+        border: none;
+        width: 180px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .body-login .linha{
+        margin-top: -6px;
+        margin-left: 5px;
+        border: solid 1px black;
+        height: 1px;
+        width: 170px;
+    }
+    .body-login #btn{
+        border: none;
+        border-radius: 10px;
+        padding: 10px 25px 10px 30px;
+        margin-top:30px;
+        outline: none;
+        color:white;
+        background: #696969;
+        font-family:"28 Days Later";   
+    }
+    .entra{
+        margin-bottom: 30px;
+    }
+    .body-login #btn:hover{
+        background: #d3d3d3;
+        color:black; 
+    }
+    #login_cliente{
+        text-align: center;
+    }
+    .body-login p {
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    /*Centralizar*/
+    #tb-pequena{
+        display: none;
+    }
+    #tb-media{
+        display: block;
+        font-size: 1.4em;
+        
+    }
+    @media only screen and (min-width : 561px) and (max-width:675px){
+        #tb-media{
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.6em;
+        }
+    }
+    @media only screen and (min-width : 675px) and (max-width: 720px){
+        #tb-media{
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.6em;
+        }
+        #tb-media td{
+            width: 25%;
+        }
+    }
+
+    #tb-grande{
+        display: none;
+    }
+    /* CADASTRAR CLIENTE */
+    #altura{
+        height: 122vh;
+    }
+    .cont-cadastrar{
+        width: 100%;
+        display: flex;
+        background-color: rgba(255,255,255,.8);
+        align-items: center;
+        justify-content: center;
+    }
+    .cadastro{
+        margin-top: -100px;
+        border: solid 4px black;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,.7);
+        box-shadow: 5px 5px 5px 3px ;
+    }
+    .cadastro h2{
+        margin-top: -40px;
+        margin-bottom: 40px;
+        background-color: transparent;
+        color: white;
+    }
+    #table-cadastro input{
+        background-color: transparent;
+        outline: none;
+        border:none;    
+    }
+    #table-cadastro{
+        text-align: left;
+    }
+    #table-cadastro span{
+        color: white;
+        font-weight: bold;
+    }
+    #table-cadastro form{
+        margin: 25px;
+
+    }
+    #table-cadastro a span:hover{
+        text-decoration:underline;
+        cursor: pointer;
+    }
+    .cadastro{
+        text-align: center;
+    }
+    #termos{
+        cursor: pointer;
+    }
+    .cadastro form #cadastrar{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        border: solid 1px white;
+        font-weight: bold;
+
+    }
+    .cadastro form #cadastrar:hover{
+        color: white;
+        border: solid 1px white;
+        background-color: black;
+        transition: .8s;
+    }
+    .cadastro form label{
+        margin:5px;
+        padding: 5px 10px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+
+    #modal-p p{
+        text-align: justify;
+    }
+    /* CADASTRAR FUNCIONARIO */
+    .cont-cadastra-fun{
+        height:155vh;
+    }
+    #cadastro-fun{
+        padding: 30px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    #cadastro-fun h2{
+        margin-top: 10px;;
+        padding: 0px;
+    }
+    .cadastrar-fun input{
+        width: 180px;
+    }
+    .cadastrar-fun select{
+        width: 180px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    /* VINCULAR */    
+    #vincular select{
+
+        outline: none;
+        border: none;
+
+    }
+    #vincular label{
+        margin:5px;
+        padding: 5px 10px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+    #vincular span{
+        font-weight: bold;
+    }
+    #vincular button{
+    border: solid 1px black;
+    background-color: black;
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#vincular button:hover{
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+    /* FOOTER  */
+    footer{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: black;
+    }
+    /* CONT-FOOTER*/
+    .cont-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color:white;
+        font-size: .7rem;
+        text-align: center;
+    }
+    .cont-footer a{
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+    }
+    .cont-footer h6{
+        font-size: .6rem;
+    }
+    .cont-footer a:hover{
+        color: white;
+        opacity: 1;
+    }
+    /* FOOTER-LEFT */
+    .footer-left{
+        width: 32%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+    /* FOOTER-MID */
+    .footer-mid{
+        width: 32%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /* FOOTER-RIGHT */
+    .footer-right{
+        width: 32%;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+@media only screen and (min-width : 721px) and (max-width: 920px){
+    /* HERO   */
+    .hero{  display: flex;flex-direction: column;align-items: center;justify-content: center;min-width: 100%; min-height: 80vh;
+            background-color: rgba(255,255,255,0.8);}
+    .hero h2,p{text-align: center;color:black;margin-bottom: 30px;}
+    .hero h2{font-size: 1.6em;}
+    .hero p{font-size: 1.4em;}
+    .hero .btn{ padding: 25px;margin-top: 15px;border-radius: 10px;background-color: rgba(0, 0, 0, 0.6);color: #050000;
+                color:white;text-transform: uppercase;font-weight: bold;cursor: pointer;}
+    .hero .btn:hover{   background-color: rgb(255, 255, 255);border: solid 1px;}
+    /* ENDERECO */
+    .endereco-barbe{
+        background-color: rgba(0,0,0,.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 80vh;
+        padding: 50px;
+    }
+    .endereco-barbe h3{
+        color: white;
+        padding: 0px;
+        margin-bottom: 40px;
+        padding-top: 0px;
+        font-size: 1.6em;
+    }
+    .div-endereco{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mapa{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #map-grande{
+        display: none;
+
+    }
+    #map-pequeno{
+        display: block;
+        width: 450px;
+        height: 450px;
+        margin-bottom: 40px;
+    }
+    .endereco{
+        width: 100%;
+    }
+    .endereco ul{
+        color: white;
+        font-size: 1.2em;
+
+    }
+    /*  AMOSTRA */
+    .amostra{display: flex;flex-direction:column;align-items: center;padding: 100px 25px;width: 100%;justify-content: center;align-items: center; background-color: rgba(255,255,255,.8)}
+    .amostra h2{font-weight: bolder;padding: 25px; padding-top:10px;}     
+    .lista-prod{display: flex;flex-direction: row;justify-content: center;align-items: center; padding: 0px;flex-wrap: wrap;
+    }
+    .prod{text-align: center; padding: 0 25px;margin-bottom:50px;}
+    figure img{width: 300px; height: 300px;}
+    figcaption h4{margin: 25px 0px; font-size: 1.6em;}
+    #conteiner-main{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ADMINISTRACAO */
+    .administracao{
+        background-color: rgba(255,255,255,.8);
+        min-height: 100vh;
+    }
+    .bem-vindo{
+        background-color: rgba(255,255,255,.8);
+    }
+    .bem-vindo h1{
+        padding: 25px;
+    }
+    .bem-vindo p{
+        font-size: 1.5em;
+    }
+    /* CONTEUDO AGENDAMENTO */
+
+    #conteiner-agendamento{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        border: solid 1px;
+
+    }
+    .nav-atendimento{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: rgba(255,255,255,.8);
+        align-items: flex-start;
+
+    }
+    #botao{
+        font-size: 1em;
+        width: 165px;
+        margin-bottom: 10px;
+    }
+    .nav-flex{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .nav-flex li{
+        padding: 5px 10px;
+        list-style-type: none;
+    }
+    .nav-flex li a{
+        text-decoration: none;
+        color: black;
+        font-size:1rem;
+        opacity: 0.5;
+        font-weight: bold;
+    }
+    .nav-flex li a:hover{
+        opacity: 1;
+    }
+    #btnNovo{
+        background-color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 1em;
+        width: 165px;
+        text-decoration: none;
+        padding: 8px 10px;
+        color: white;  
+        border: solid 1px black;
+        margin-bottom: 10px;
+    }
+    #btnNovo:hover{
+        transition: .8s;
+        background-color: white;
+        color: black;
+        border: solid 1px;
+    }
+    .busca{
+        margin-top: 10px;
+    }
+    #form-busca span{
+        padding: 0px 10px;
+        padding-left: 0px;
+        font-weight: bold;
+
+        font-size: 1em;
+    }
+    #form-busca input{
+        padding: 0px 10px;
+        padding-left: 0px;
+        outline: none;
+        width: 150px;
+        border: none;
+        background-color: rgba(255,255,255,0.0);
+        border-bottom: solid 1px;
+    }
+    #form-busca button{
+        padding: 0px 15px;
+        padding-left: 0px;
+        outline: none;
+        border: none;
+        background-color: rgba(255,255,255,0.0); 
+    }
+    .conteudo-agendamento{
+        width: 100%;
+        height: 100%;
+
+    }
+    .tabela-branca{
+        margin-top: 0px;
+        background-color: rgba(255,255,255,.8);
+        min-height: 110vh;
+
+    }
+    .tabela-branca p{
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 200px;
+    }
+    #h2-branco{
+        background-color: rgba(255,255,255,.9)
+    }
+    .altara-100{
+        min-height: 100vh;
+    }
+    /* SERVIÇOS */
+    .conteudo-servico{
+
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .servico{   
+        margin-top: 80px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,255,.9); 
+        border: solid 2px;
+        margin-bottom: 30px;
+
+    }
+    .servico h3{
+        text-align: center;
+    }
+    #servico{
+        padding: 0px;
+
+    }
+    .servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 15px;
+        margin-bottom: 10px;
+        margin-right:30px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .cont-serv div{
+        margin: 0px 20px;
+        padding: 10px;
+
+    }
+    .cont-serv{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+
+    }
+    .cont-serv label{
+        font-size: 1em;
+    }
+    /* Funcionario */
+    .cont-fun{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .h3{
+        padding: 20px;
+    }
+    .funcionario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:5px 20px;
+        background-color: rgba(255,255,255,0.0); 
+        padding: 20px;
+        max-width: 460px;
+    }
+    .funcionario #branco{
+        margin: 10px;
+    }
+    .data-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .conteudo-servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right:0px;
+        color: white;
+        margin-top: -10px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .conteudo-servico form span{
+        font-weight: bold;
+        padding: 5px 15px;
+        padding-left:2px;
+    }
+    /*HORARIO*/
+    .horario{
+        padding: 20px;
+        width: 420px;
+    }
+    .horario h4{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #proximo{
+        margin-top: -10px;
+    }
+    #proximo-fun{
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    #proximo-ser{
+        margin-right: 10px;
+    }
+    .cont-hora{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .erro{
+        padding: 100px;
+    }
+    .redirect button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-right:15px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    /*RESUMO*/
+    .cont-resumo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+    }
+    .resumo{
+        max-width: 500px;
+        background-color: rgba(255,255,255,0.9);
+        padding: 30px;
+
+    }
+    .resumo table input{
+        margin-bottom: 10px;
+    }
+    .resumo table span{
+        font-weight: bold;
+    }
+    .resumo button{
+        background-color: black;
+        color: white;
+        outline: none;
+        border: solid 1px;
+        padding: 8px;
+        margin: 7px;
+        font-weight: bold;
+        border-radius: 10px;
+
+    }
+    .resumo button:hover{
+        background-color: white;
+        color: black;
+        border: solid 1px;
+        transition: .8s;
+    }
+    /* LOGIN */
+
+    .mensagem{
+        margin-top: 10px;
+    }
+    .conteiner-login{
+        background: white;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        border: solid 4px;
+        margin: 10%;
+        border-radius: 20px;
+        width: 45%;
+        max-width: 450px;
+        box-sizing: border-box;
+        background-color: rgba(255,255,255,0.9);
+    }
+    .conteiner-login figure img{
+        width: 125px;
+        height: 125px;
+    }
+    .mensagem{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .conteiner-login figure{
+        align-items: center;
+        padding: 15px 10px;
+        margin-top: 10px; 
+    }
+    #head-login{
+        object-fit: fill;
+    }
+    .head-login{
+        object-fit: fill;
+
+    }
+    #msg{
+        border-radius: 20px;
+        font-size:1em;
+    }
+    #msg button{
+        font-size:1em;
+    }
+    msg{
+        border-radius: 20px;
+        font-size:.8em;
+    }
+    #msg #btn-fecha{
+        font-size: 1em;
+        margin-top: -15px;
+        margin-left: 40px;
+    }
+    #msg #btn-fun{
+        font-size: 1em;
+        margin-top: 2px;
+        margin-left: 40px;
+    }
+    .body-login{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .body-login form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner-login p{
+        font-size: 1.2em;
+        flex-wrap: nowrap;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .form-table{
+        align-items: center;
+    }
+    .tabela{
+        font-size: 1.2em;
+    }
+    .tabela span{
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login h3{
+        margin-top: 0px;
+        text-align: center;
+        padding: 0px;
+        font-size: 1.8em;
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login #titulo-login{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .body-login input{
+        padding: 10px;
+        margin:5px;
+        outline: none;
+        border: none;
+        width: 180px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .body-login .linha{
+        margin-top: -6px;
+        margin-left: 5px;
+        border: solid 1px black;
+        height: 1px;
+        width: 170px;
+    }
+    .body-login #btn{
+        border: none;
+        border-radius: 10px;
+        padding: 10px 25px 10px 30px;
+        margin-top:30px;
+        outline: none;
+        color:white;
+        background: #696969;
+        font-family:"28 Days Later";   
+    }
+    .entra{
+        margin-bottom: 30px;
+    }
+    .body-login #btn:hover{
+        background: #d3d3d3;
+        color:black; 
+    }
+    #login_cliente{
+        text-align: center;
+    }
+    .body-login p {
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    /*Centralizar*/
+    #tb-pequena{
+        display:none;
+    }
+    #tb-media{
+        display: block;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 1.5em;
+    }
+    @media only screen and (min-width : 762px) and (max-width: 809px){
+        #tb-media{
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.6em;
+        }
+    }
+    @media only screen and (min-width : 810px) and (max-width: 855px){
+        #tb-media{
+            display:block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.7em;
+        }
+    }
+    @media only screen and (min-width : 856px) and (max-width: 1000px){
+        #tb-media{
+            display:block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.8em;
+            
+        }
+        #tb-media td{
+            
+           width: 30%;
+        }
+    }
+    main h2{
+        font-size: 2.2em;
+    }
+    #tb-grande{
+        display:none;
+    }
+    /* CADASTRAR CLIENTE */
+    #altura{
+        height: 122vh;
+    }
+    .cont-cadastrar{
+        width: 100%;
+        display: flex;
+        background-color: rgba(255,255,255,.8);
+        align-items: center;
+        justify-content: center;
+    }
+    .cadastro{
+        margin-top: -100px;
+        border: solid 4px black;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,.7);
+        box-shadow: 5px 5px 5px 3px ;
+    }
+    .cadastro h2{
+        margin-top: -40px;
+        margin-bottom: 40px;
+        background-color: transparent;
+        color: white;
+    }
+    #table-cadastro input{
+        background-color: transparent;
+        outline: none;
+        border:none;    
+    }
+    #table-cadastro{
+        text-align: left;
+    }
+    #table-cadastro span{
+        color: white;
+        font-weight: bold;
+    }
+    #table-cadastro form{
+        margin: 25px;
+
+    }
+    #table-cadastro a span:hover{
+        text-decoration:underline;
+        cursor: pointer;
+    }
+    .cadastro{
+        text-align: center;
+    }
+    #termos{
+        cursor: pointer;
+    }
+    .cadastro form #cadastrar{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        border: solid 1px white;
+        font-weight: bold;
+
+    }
+    .cadastro form #cadastrar:hover{
+        color: white;
+        border: solid 1px white;
+        background-color: black;
+        transition: .8s;
+    }
+    .cadastro form label{
+        margin:5px;
+        padding: 5px 10px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+
+    #modal-p p{
+        text-align: justify;
+    }
+    /* CADASTRAR FUNCIONARIO */
+    .cont-cadastra-fun{
+        height:155vh;
+    }
+    #cadastro-fun{
+        padding: 30px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    #cadastro-fun h2{
+        margin-top: 10px;;
+        padding: 0px;
+    }
+    .cadastrar-fun input{
+        width: 180px;
+    }
+    .cadastrar-fun select{
+        width: 180px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    /* VINCULAR */    
+    #vincular select{
+
+        outline: none;
+        border: none;
+
+    }
+    #vincular label{
+        margin:5px;
+        padding: 5px 10px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+    #vincular span{
+        font-weight: bold;
+    }
+    #vincular button{
+    border: solid 1px black;
+    background-color: black;
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#vincular button:hover{
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+    /* FOOTER  */
+    footer{
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: black;
+    }
+    /* CONT-FOOTER*/
+    .cont-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color:white;
+        font-size: .8rem;
+        text-align: center;
+    }
+    .cont-footer a{
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+    }
+    .cont-footer h6{
+        font-size: 1rem;
+    }
+    .cont-footer a:hover{
+        color: white;
+        opacity: 1;
+    }
+    /* FOOTER-LEFT */
+    .footer-left{
+        width: 32%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    /* FOOTER-MID */
+    .footer-mid{
+        width: 32%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /* FOOTER-RIGHT */
+    .footer-right{
+        width: 32%;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media only screen and (min-width : 921px) and (max-width: 1120px){
+    /* HERO   */
+    .hero{  display: flex;flex-direction: column;align-items: center;justify-content: center;min-width: 100%; min-height: 80vh;
+            background-color: rgba(255,255,255,0.8);}
+    .hero h2,p{text-align: center;color:black;margin-bottom: 30px;}
+    .hero h2{font-size: 1.9em;}
+    .hero p{font-size: 1.6em;}
+    .hero .btn{ padding: 25px;margin-top: 15px;border-radius: 10px;background-color: rgba(0, 0, 0, 0.6);color: #050000;
+                color:white;text-transform: uppercase;font-weight: bold;cursor: pointer;}
+    .hero .btn:hover{   background-color: rgb(255, 255, 255);border: solid 1px;}
+    /* ENDERECO */
+    .endereco-barbe{
+        background-color: rgba(0,0,0,.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 80vh;
+        padding: 50px;
+    }
+    .endereco-barbe h3{
+        color: white;
+        padding: 0px;
+        margin-bottom: 40px;
+        padding-top: 0px;
+        font-size: 1.9em;
+    }
+
+    .div-endereco{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mapa{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #map-grande{
+        display: none;
+
+    }
+    #map-pequeno{
+        display: block;
+        width: 600px;
+        height: 600px;
+        margin-bottom: 40px;
+    }
+    .endereco{
+        width: 100%;
+    }
+    .endereco ul{
+        color: white;
+        font-size: 1.5rem;
+
+    }
+    .div-endereco h5{
+        font-size: 1.8rem;
+    }
+    /*  AMOSTRA */
+    .amostra{display: flex;flex-direction:column;align-items: center;padding: 100px 50px;width: 100%;justify-content: center;align-items: center; background-color: rgba(255,255,255,.8)}
+    .amostra h2{font-weight: bolder;padding: 25px; padding-top:10px;}     
+    .lista-prod{display: flex;flex-direction: row;justify-content: center;align-items: center; padding: 0px;flex-wrap: wrap;
+    }
+    .prod{text-align: center; padding: 0 25px;margin-bottom:50px;}
+    figure img{width: 300px; height: 300px;}
+    figcaption h4{margin: 25px 0px; font-size: 1.9em;}
+    #conteiner-main{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ADMINISTRACAO */
+    .administracao{
+        background-color: rgba(255,255,255,.8);
+        min-height: 100vh;
+    }
+    .bem-vindo{
+        background-color: rgba(255,255,255,.8);
+    }
+    .bem-vindo h1{
+        padding: 25px;
+    }
+    .bem-vindo p{
+        font-size: 1.5em;
+    }
+    /* CONTEUDO AGENDAMENTO */
+
+    #conteiner-agendamento{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        border: solid 1px;
+
+    }
+    .nav-atendimento{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: rgba(255,255,255,.8);
+        align-items: flex-start;
+
+    }
+    #botao{
+        font-size: 1em;
+        width: 165px;
+        margin-bottom: 10px;
+    }
+    .nav-flex{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .nav-flex li{
+        padding: 5px 10px;
+        list-style-type: none;
+    }
+    .nav-flex li a{
+        text-decoration: none;
+        color: black;
+        font-size:1rem;
+        opacity: 0.5;
+        font-weight: bold;
+    }
+    .nav-flex li a:hover{
+        opacity: 1;
+    }
+    #btnNovo{
+        background-color: black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 1em;
+        width: 165px;
+        text-decoration: none;
+        padding: 8px 10px;
+        color: white;  
+        border: solid 1px black;
+        margin-bottom: 10px;
+    }
+    #btnNovo:hover{
+        transition: .8s;
+        background-color: white;
+        color: black;
+        border: solid 1px;
+    }
+    .busca{
+        margin-top: 10px;
+    }
+    #form-busca span{
+        padding: 0px 10px;
+        padding-left: 0px;
+        font-weight: bold;
+
+        font-size: 1em;
+    }
+    #form-busca input{
+        padding: 0px 10px;
+        padding-left: 0px;
+        outline: none;
+        width: 150px;
+        border: none;
+        background-color: rgba(255,255,255,0.0);
+        border-bottom: solid 1px;
+    }
+    #form-busca button{
+        padding: 0px 15px;
+        padding-left: 0px;
+        outline: none;
+        border: none;
+        background-color: rgba(255,255,255,0.0); 
+    }
+    .conteudo-agendamento{
+        width: 100%;
+        height: 100%;
+
+    }
+    .tabela-branca{
+        margin-top: 0px;
+        background-color: rgba(255,255,255,.8);
+        min-height: 110vh;
+
+    }
+    .tabela-branca p{
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 200px;
+    }
+    #h2-branco{
+        background-color: rgba(255,255,255,.9)
+    }
+    .altara-100{
+        min-height: 100vh;
+    }
+    /* SERVIÇOS */
+    .conteudo-servico{
+
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .servico{   
+        margin-top: 80px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,255,.9); 
+        border: solid 2px;
+
+        font-size: .9em;
+    }
+    .servico h3{
+        text-align: center;
+    }
+    #servico{
+        padding: 0px;
+
+    }
+    .servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 15px;
+        margin-bottom: 10px;
+        margin-right:30px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .cont-serv div{
+        margin: 0px 10px;
+        padding: 10px 0px;
+
+    }
+    .cont-serv{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+
+    }
+    @media only screen and (min-width : 1100px) and (max-width: 1120px){
+        .conteudo-servico{
+
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .servico{   
+            margin-top: 80px;
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255,255,255,.9); 
+            border: solid 2px;
+
+            font-size: 1.1em;
+        }
+        .servico h3{
+            text-align: center;
+        }
+        #servico{
+            padding: 0px;
+
+        }
+        .servico form button{
+            float: right;
+            outline: none;
+            border: none;
+            font-weight: bold;
+            padding: 15px;
+            margin-bottom: 10px;
+            margin-right:30px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .cont-serv div{
+            margin: 0px 5px;
+            padding: 10px 0px;
+
+        }
+        .cont-serv{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+
+        }
+    }
+    /* Funcionario */
+    .cont-fun{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .h3{
+        padding: 20px;
+    }
+    .funcionario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:5px 20px;
+        background-color: rgba(255,255,255,0.0); 
+        padding: 20px;
+        max-width: 460px;
+    }
+    .funcionario #branco{
+        margin: 10px;
+    }
+    .data-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .conteudo-servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right:0px;
+        color: white;
+        margin-top: -10px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .conteudo-servico form span{
+        font-weight: bold;
+        padding: 5px 15px;
+        padding-left:2px;
+    }
+    /*HORARIO*/
+    .horario{
+        padding: 20px;
+        width: 420px;
+    }
+    .horario h4{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #proximo{
+        margin-top: -10px;
+    }
+    #proximo-fun{
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    #proximo-ser{
+        margin-right: 10px;
+    }
+    .cont-hora{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .erro{
+        padding: 100px;
+    }
+    .redirect button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-right:15px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    /*RESUMO*/
+    .cont-resumo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+    }
+    .resumo{
+        max-width: 500px;
+        background-color: rgba(255,255,255,0.9);
+        padding: 30px;
+
+    }
+    .resumo table input{
+        margin-bottom: 10px;
+    }
+    .resumo table span{
+        font-weight: bold;
+    }
+    .resumo button{
+        background-color: black;
+        color: white;
+        outline: none;
+        border: solid 1px;
+        padding: 8px;
+        margin: 7px;
+        font-weight: bold;
+        border-radius: 10px;
+
+    }
+    .resumo button:hover{
+        background-color: white;
+        color: black;
+        border: solid 1px;
+        transition: .8s;
+    }
+    /* LOGIN */
+
+    .mensagem{
+        margin-top: 10px;
+    }
+    .conteiner-login{
+        background: white;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        border: solid 4px;
+        margin: 10%;
+        border-radius: 20px;
+        width: 45%;
+        max-width: 450px;
+        box-sizing: border-box;
+        background-color: rgba(255,255,255,0.9);
+    }
+    .conteiner-login figure img{
+        width: 130px;
+        height: 130px;
+    }
+    .mensagem{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .conteiner-login figure{
+        align-items: center;
+        padding: 15px 10px;
+        margin-top: 10px; 
+    }
+    #head-login{
+        object-fit: fill;
+    }
+    .head-login{
+        object-fit: fill;
+
+    }
+    #msg{
+        border-radius: 20px;
+        font-size:1.1em;
+    }
+    #msg button{
+        font-size:1.1em;
+    }
+    #msg #btn-fecha{
+        font-size: 1.1em;
+        margin-top: -15px;
+        margin-left: 40px;
+    }
+    #msg #btn-fun{
+        font-size: 1.1em;
+        margin-top: 2px;
+        margin-left: 40px;
+    }
+    .body-login{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .body-login form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner-login p{
+        font-size: 1.2em;
+        flex-wrap: nowrap;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .form-table{
+        align-items: center;
+    }
+    .tabela{
+        font-size: 1.3em;
+    }
+    .tabela span{
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login h3{
+        margin-top: 0px;
+        text-align: center;
+        padding: 0px;
+        font-size: 1.8em;
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login #titulo-login{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .body-login input{
+        padding: 10px;
+        margin:5px;
+        outline: none;
+        border: none;
+        width: 180px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .body-login .linha{
+        margin-top: -6px;
+        margin-left: 5px;
+        border: solid 1px black;
+        height: 1px;
+        width: 170px;
+    }
+    .body-login #btn{
+        border: none;
+        border-radius: 10px;
+        padding: 10px 25px 10px 30px;
+        margin-top:30px;
+        outline: none;
+        color:white;
+        background: #696969;
+        font-family:"28 Days Later";   
+    }
+    .entra{
+        margin-bottom: 30px;
+    }
+    .body-login #btn:hover{
+        background: #d3d3d3;
+        color:black; 
+    }
+    #login_cliente{
+        text-align: center;
+    }
+    .body-login p {
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    /*Centralizar*/
+    #centralizar{
+        text-align: center;
+        vertical-align: middle;
+    }
+    /* CADASTRAR CLIENTE */
+    #altura{
+        height: 122vh;
+    }
+    .cont-cadastrar{
+        width: 100%;
+        display: flex;
+        background-color: rgba(255,255,255,.8);
+        align-items: center;
+        justify-content: center;
+    }
+    .cadastro{
+        margin-top: -100px;
+        border: solid 4px black;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,.7);
+        box-shadow: 5px 5px 5px 3px ;
+    }
+    .cadastro h2{
+        margin-top: -40px;
+        margin-bottom: 40px;
+        background-color: transparent;
+        color: white;
+    }
+    #table-cadastro input{
+        background-color: transparent;
+        outline: none;
+        border:none;    
+    }
+    #table-cadastro{
+        text-align: left;
+    }
+    #table-cadastro span{
+        color: white;
+        font-weight: bold;
+    }
+    #table-cadastro form{
+        margin: 25px;
+
+    }
+    #table-cadastro a span:hover{
+        text-decoration:underline;
+        cursor: pointer;
+    }
+    .cadastro{
+        text-align: center;
+    }
+    #termos{
+        cursor: pointer;
+    }
+    .cadastro form #cadastrar{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        border: solid 1px white;
+        font-weight: bold;
+
+    }
+    .cadastro form #cadastrar:hover{
+        color: white;
+        border: solid 1px white;
+        background-color: black;
+        transition: .8s;
+    }
+    .cadastro form label{
+        margin:5px;
+        padding: 5px 10px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+
+    #modal-p p{
+        text-align: justify;
+    }
+    /* CADASTRAR FUNCIONARIO */
+    .cont-cadastra-fun{
+        height:155vh;
+    }
+    #cadastro-fun{
+        padding: 30px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    #cadastro-fun h2{
+        margin-top: 10px;;
+        padding: 0px;
+    }
+    .cadastrar-fun input{
+        width: 180px;
+    }
+    .cadastrar-fun select{
+        width: 180px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    /* VINCULAR */    
+    #vincular select{
+
+        outline: none;
+        border: none;
+
+    }
+    #vincular label{
+        margin:5px;
+        padding: 5px 10px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+    #vincular span{
+        font-weight: bold;
+    }
+    #vincular button{
+    border: solid 1px black;
+    background-color: black;
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#vincular button:hover{
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+    /* FOOTER  */
+    footer{
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: black;
+    }
+    /* CONT-FOOTER*/
+    .cont-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color:white;
+        font-size: 1rem;
+
+    }
+    .cont-footer a{
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+    }
+    .cont-footer h6{
+        font-size: 1.3rem;
+    }
+    .cont-footer a:hover{
+        color: white;
+        opacity: 1;
+    }
+    /* FOOTER-LEFT */
+    .footer-left{
+        width: 32%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+    /* FOOTER-MID */
+    .footer-mid{
+        width: 32%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /* FOOTER-RIGHT */
+    .footer-right{
+        width: 32%;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media only screen and (min-width : 1121px) and (max-width: 1320px){
+    /* HERO   */
+    .hero{  display: flex;flex-direction: column;align-items: center;justify-content: center;min-width: 100%; min-height: 80vh;
+            background-color: rgba(255,255,255,0.8);}
+    .hero h2,p{text-align: center;color:black;margin-bottom: 30px;}
+    .hero h2{font-size: 2.2em;}
+    .hero p{font-size: 1.9em;}
+    .hero .btn{ padding: 25px;margin-top: 15px;border-radius: 10px;background-color: rgba(0, 0, 0, 0.6);color: #050000;
+                color:white;text-transform: uppercase;font-weight: bold;cursor: pointer;}
+    .hero .btn:hover{   background-color: rgb(255, 255, 255);border: solid 1px;}
+    /* ENDERECO */
+    .endereco-barbe{
+        background-color: rgba(0,0,0,.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 80vh;
+        padding: 50px;
+    }
+    .endereco-barbe h3{
+        color: white;
+        padding: 0px;
+        margin-bottom: 40px;
+        padding-top: 0px;
+        font-size: 1.9em;
+    }
+
+    .div-endereco{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mapa{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #map-grande{
+        display: none;
+
+    }
+    #map-pequeno{
+        display: block;
+        width: 450px;
+        height: 450px;
+        margin-bottom: 40px;
+    }
+    .endereco{
+        width: 50%;
+    }
+    .endereco ul{
+        color: white;
+        font-size: 1.5rem;
+
+    }
+    .div-endereco h5{
+        font-size: 1.8rem;
+    }
+    /*  AMOSTRA */
+    .amostra{display: flex;flex-direction:column;align-items: center;padding: 100px 50px;width: 100%;justify-content: center;align-items: center; background-color: rgba(255,255,255,.8)}
+    .amostra h3{font-weight: bolder;padding: 25px; padding-top:10px;font-size: 2.5em;}
+    .lista-prod{display: flex;flex-direction: row;justify-content: center;align-items: center; padding: 50px;flex-wrap: wrap;
+    }
+    .prod{text-align: center; padding: 0 25px;margin-bottom:50px;}
+    figure img{width: 300px; height: 300px;}
+    figcaption h4{margin: 25px 0px; font-size: 1.9em;}
+    #conteiner-main{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ADMINISTRACAO */
+    .administracao{
+        background-color: rgba(255,255,255,.8);
+        min-height: 100vh;
+    }
+    .bem-vindo{
+        background-color: rgba(255,255,255,.8);
+    }
+    .bem-vindo h1{
+        padding: 25px;
+    }
+    .bem-vindo p{
+        font-size: 1.5em;
+    }
+    /* CONTEUDO AGENDAMENTO */
+
+    #conteiner-agendamento{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        border: solid 1px;
+
+    }
+    .nav-atendimento{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: rgba(255,255,255,.8);
+        align-items: center;
+
+    }
+    .nav-flex{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .nav-flex li{
+        padding: 5px 10px;
+        list-style-type: none;
+    }
+    .nav-flex li a{
+        text-decoration: none;
+        color: black;
+        font-size:.9rem;
+        opacity: 0.5;
+        font-weight: bold;
+    }
+    .nav-flex li a:hover{
+        opacity: 1;
+    }
+    #btnNovo{
+        background-color: black;
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding: 12px 20px;
+        color: white;  
+        border: solid 1px black;
+    }
+    #btnNovo:hover{
+        transition: .8s;
+        background-color: white;
+        color: black;
+        border: solid 1px;
+    }
+    #form-busca span{
+        padding: 0px 10px;
+        padding-left: 0px;
+        font-weight: bold;
+    }
+    #form-busca input{
+        padding: 0px 10px;
+        padding-left: 0px;
+        outline: none;
+        border: none;
+        background-color: rgba(255,255,255,0.0);
+        border-bottom: solid 1px;
+    }
+    #form-busca button{
+        padding: 0px 15px;
+        padding-left: 0px;
+        outline: none;
+        border: none;
+        background-color: rgba(255,255,255,0.0); 
+    }
+    .conteudo-agendamento{
+        width: 100%;
+        height: 100%;
+
+    }
+    .tabela-branca{
+        margin-top: 0px;
+        background-color: rgba(255,255,255,.8);
+        min-height: 110vh;
+
+    }
+    .tabela-branca p{
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 200px;
+    }
+    #h2-branco{
+        background-color: rgba(255,255,255,.9)
+    }
+    .altara-100{
+        min-height: 100vh;
+    }
+    /* SERVIÇOS */
+    .conteudo-servico{
+
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .servico{   
+        margin-top: 80px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,255,.9); 
+        border: solid 2px;
+        font-size: 1.2em;
+
+    }
+    .servico h3{
+        text-align: center;
+    }
+    #servico{
+        padding: 10px;
+
+    }
+    .servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 15px;
+        margin-bottom: 10px;
+        margin-right:30px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .cont-serv div{
+        margin: 0px 0px;
+        padding: 5px 4px;;
+
+    }
+    .cont-serv{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+    
+    /* Funcionario */
+    .cont-fun{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .h3{
+        padding: 20px;
+    }
+    .funcionario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:5px 20px;
+        background-color: rgba(255,255,255,0.0); 
+        padding: 20px;
+        max-width: 460px;
+    }
+    .funcionario #branco{
+        margin: 10px;
+    }
+    .data-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .conteudo-servico form button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right:0px;
+        color: white;
+        margin-top: -10px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .conteudo-servico form span{
+        font-weight: bold;
+        padding: 5px 15px;
+        padding-left:2px;
+    }
+    /*HORARIO*/
+    .horario{
+        padding: 20px;
+        width: 420px;
+    }
+    .horario h4{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #proximo{
+        margin-top: -10px;
+    }
+    #proximo-fun{
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    #proximo-ser{
+        margin-right: 10px;
+    }
+    .cont-hora{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .erro{
+        padding: 100px;
+    }
+    .redirect button{
+        float: right;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-right:15px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    /*RESUMO*/
+    .cont-resumo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+    }
+    .resumo{
+        max-width: 500px;
+        background-color: rgba(255,255,255,0.9);
+        padding: 30px;
+
+    }
+    .resumo table input{
+        margin-bottom: 10px;
+    }
+    .resumo table span{
+        font-weight: bold;
+    }
+    .resumo button{
+        background-color: black;
+        color: white;
+        outline: none;
+        border: solid 1px;
+        padding: 8px;
+        margin: 7px;
+        font-weight: bold;
+        border-radius: 10px;
+
+    }
+    .resumo button:hover{
+        background-color: white;
+        color: black;
+        border: solid 1px;
+        transition: .8s;
+    }
+    /* LOGIN */
+
+    .mensagem{
+        margin-top: 10px;
+    }
+    .conteiner-login{
+        background: white;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        border: solid 4px;
+        margin: 10%;
+        border-radius: 20px;
+        width: 40%;
+        max-width: 450px;
+        box-sizing: border-box;
+        background-color: rgba(255,255,255,0.9);
+    }
+    .conteiner-login figure img{
+        width: 150px;
+        height: 150px;
+    }
+    .mensagem{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .conteiner-login figure{
+        align-items: center;
+        padding: 15px 10px;
+        margin-top: 10px; 
+    }
+    #head-login{
+        object-fit: fill;
+    }
+    .head-login{
+        object-fit: fill;
+
+    }
+    #msg{
+        border-radius: 20px;
+        font-size:1.2em;
+    }
+    #msg button{
+        font-size:1.2em;
+    }
+
+    #msg #btn-fecha{
+        margin-top: -15px;
+        margin-left: 40px;
+    }
+    #msg #btn-fun{
+        margin-top: 2px;
+        margin-left: 40px;
+    }
+
+    .body-login{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .body-login form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner-login p{
+        font-size: 1.3em;
+        flex-wrap: nowrap;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .form-table{
+        align-items: center;
+    }
+    .tabela{
+        font-size: 1.5em;
+    }
+    .tabela span{
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login h3{
+        margin-top: 0px;
+        text-align: center;
+        padding: 0px;
+        font-size: 1.8em;
+        font-family:"28 Days Later";
+        font-weight: bold;
+    }
+    .body-login #titulo-login{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .body-login input{
+        padding: 10px;
+        margin:5px;
+        outline: none;
+        border: none;
+        width: 180px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .body-login .linha{
+        margin-top: -6px;
+        margin-left: 5px;
+        border: solid 1px black;
+        height: 1px;
+        width: 170px;
+    }
+    .body-login #btn{
+        border: none;
+        border-radius: 10px;
+        padding: 10px 25px 10px 30px;
+        margin-top:30px;
+        outline: none;
+        color:white;
+        background: #696969;
+        font-family:"28 Days Later";   
+    }
+    .entra{
+        margin-bottom: 30px;
+    }
+    .body-login #btn:hover{
+        background: #d3d3d3;
+        color:black; 
+    }
+    #login_cliente{
+        text-align: center;
+    }
+    .body-login p {
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    /*Centralizar*/
+    #centralizar{
+        text-align: center;
+        vertical-align: middle;
+    }
+    /* CADASTRAR CLIENTE */
+    #altura{
+        height: 122vh;
+    }
+    .cont-cadastrar{
+        width: 100%;
+        display: flex;
+        background-color: rgba(255,255,255,.8);
+        align-items: center;
+        justify-content: center;
+    }
+    .cadastro{
+        margin-top: -100px;
+        border: solid 4px black;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,.7);
+        box-shadow: 5px 5px 5px 3px ;
+    }
+    .cadastro h2{
+        margin-top: -40px;
+        margin-bottom: 40px;
+        background-color: transparent;
+        color: white;
+    }
+    #table-cadastro input{
+        background-color: transparent;
+        outline: none;
+        border:none;    
+    }
+    #table-cadastro{
+        text-align: left;
+    }
+    #table-cadastro span{
+        color: white;
+        font-weight: bold;
+    }
+    #table-cadastro form{
+        margin: 25px;
+
+    }
+    #table-cadastro a span:hover{
+        text-decoration:underline;
+        cursor: pointer;
+    }
+    .cadastro{
+        text-align: center;
+    }
+    #termos{
+        cursor: pointer;
+    }
+    .cadastro form #cadastrar{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        border: solid 1px white;
+        font-weight: bold;
+
+    }
+    .cadastro form #cadastrar:hover{
+        color: white;
+        border: solid 1px white;
+        background-color: black;
+        transition: .8s;
+    }
+    .cadastro form label{
+        margin:5px;
+        padding: 5px 10px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+
+    #modal-p p{
+        text-align: justify;
+    }
+    /* CADASTRAR FUNCIONARIO */
+    .cont-cadastra-fun{
+        height:155vh;
+    }
+    #cadastro-fun{
+        padding: 30px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    #cadastro-fun h2{
+        margin-top: 10px;;
+        padding: 0px;
+    }
+    .cadastrar-fun input{
+        width: 180px;
+    }
+    .cadastrar-fun select{
+        width: 180px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    /* VINCULAR */    
+    #vincular select{
+
+        outline: none;
+        border: none;
+
+    }
+    #vincular label{
+        margin:5px;
+        padding: 5px 10px;;
+        margin-right: 0px;
+        border-radius: 10px;
+        outline: none;
+        border:solid 1px;
+        background-color: white;
+        margin-left: 10px;
+    }
+    #vincular span{
+        font-weight: bold;
+    }
+    #vincular button{
+    border: solid 1px black;
+    background-color: black;
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#vincular button:hover{
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+    /* FOOTER  */
+    footer{
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: black;
+    }
+    /* CONT-FOOTER*/
+    .cont-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color:white;
+        font-size: .9rem;
+
+    }
+    .cont-footer a{
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+    }
+    .cont-footer h6{
+        font-size: 1.3rem;
+    }
+    .cont-footer a:hover{
+        color: white;
+        opacity: 1;
+    }
+    /* FOOTER-LEFT */
+    .footer-left{
+        width: 32%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+    /* FOOTER-MID */
+    .footer-mid{
+        width: 32%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /* FOOTER-RIGHT */
+    .footer-right{
+        width: 32%;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+}
+
